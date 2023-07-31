@@ -22,7 +22,7 @@ public class CardDeliveryTest {
         String planningDate = generateDate(7);
 
         open("http://localhost:9999");
-//        SelenideElement form = $("form");
+        
         $("[data-test-id=city] input").setValue("Абакан");
         $("[data-test-id=date] input").doubleClick().sendKeys(planningDate);
         $("[data-test-id=name] input").setValue("Новосельцев Анатолий");
